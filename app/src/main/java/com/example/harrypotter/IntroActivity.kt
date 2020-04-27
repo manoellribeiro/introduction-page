@@ -13,7 +13,6 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.activity_intro.*
 
 class IntroActivity : AppCompatActivity() {
 
@@ -60,9 +59,9 @@ class IntroActivity : AppCompatActivity() {
         // Fill list screen
 
         var mList: List<ScreenItem> = listOf(
-            ScreenItem("Fresh Food", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", R.drawable.img1),
-            ScreenItem("Fast Delivery", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", R.drawable.img2),
-            ScreenItem("Easy Payment", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", R.drawable.img3)
+            ScreenItem("Harry Potter Library", "Hello, welcome to the Harry Potter Library mobile application, here you can find a lot about the Harry Potter Universe", "hello_wizard.json"),
+            ScreenItem("Characters", "Get details about every single characters in the book series, as school name, house and specie.", "hermione.json"),
+            ScreenItem("Spells", "Know about all the spells used in the series, discover new ones and get information about them.", "wizard-spells.json")
         )
 
         //Setup viewpager

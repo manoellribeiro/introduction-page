@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
+import com.airbnb.lottie.LottieAnimationView
 
 class IntroViewPageAdapter(val mContext: Context, var mListSreen: List<ScreenItem>): PagerAdapter() {
 
@@ -27,11 +28,12 @@ class IntroViewPageAdapter(val mContext: Context, var mListSreen: List<ScreenIte
         var inflater: LayoutInflater = mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var layoutScreen: View = inflater.inflate(R.layout.layout_screen, null)
 
-        var imageSlide: ImageView = layoutScreen.findViewById(R.id.intro_image)
+        var animationSlide: LottieAnimationView = layoutScreen.findViewById(R.id.intro_animation)
         var title: TextView = layoutScreen.findViewById(R.id.intro_title)
         var description: TextView = layoutScreen.findViewById(R.id.intro_description)
 
-        imageSlide.setImageResource(mListSreen[position].ScreenImage)
+
+        animationSlide.setAnimation(mListSreen[position].AnimationFile)
         title.setText(mListSreen[position].Title)
         description.setText(mListSreen[position].Description)
 
