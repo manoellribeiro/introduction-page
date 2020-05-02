@@ -9,6 +9,19 @@
     <color name="gradient_start_color">#4c84ff</color>
     <color name="gradient_end_color">#18a3fe</color>
 
+    <color name="gryffindor_gradient_start_color">#7f0909</color>
+    <color name="gryffindor_gradient_end_color">#A54840</color>
+
+    <color name="slytherin_gradient_start_color">#0D6217</color>
+    <color name="slytherin_gradient_end_color">#328138</color>
+
+    <color name="hufflepuf_gradient_start_color">#eee117</color>
+    <color name="hufflepuf_gradient_end_color">#FDFC46</color>
+
+    <color name="ravenclaw_gradient_start_color">#000A90</color>
+    <color name="ravenclaw_gradient_end_color">#3336A6</color>
+
+
     <!-- colors for tab and screent text -->
 
     <color name="tab_indicator_gray">#c0c0c0</color>
