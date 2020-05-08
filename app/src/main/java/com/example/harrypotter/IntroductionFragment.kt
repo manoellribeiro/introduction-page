@@ -11,12 +11,10 @@ import android.view.ViewGroup
 import android.view.Window
 import android.view.animation.AnimationUtils
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.harrypotter.databinding.FragmentIntroductionBinding
 import com.google.android.material.tabs.TabLayout
-
-/**
- * A simple [Fragment] subclass.
- */
 class IntroductionFragment : Fragment() {
 
     var positon: Int = 0
@@ -74,6 +72,7 @@ class IntroductionFragment : Fragment() {
 
        })
         binding.buttonGetStarted.setOnClickListener {
+
             //open main acitivity
             var mainActivity: Intent = Intent(requireContext(), MainActivity::class.java)
             startActivity(mainActivity)

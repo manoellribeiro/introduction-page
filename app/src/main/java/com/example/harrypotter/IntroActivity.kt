@@ -11,6 +11,7 @@ import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager.widget.ViewPager
 import com.example.harrypotter.databinding.ActivityIntroBinding
@@ -28,7 +29,6 @@ class IntroActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-
 
         // When this activity is about to be launch we need to check if its opened before or not
 
